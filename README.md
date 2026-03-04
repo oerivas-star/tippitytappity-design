@@ -11,7 +11,6 @@ classDiagram
   typingTest <|-- typingSpeed
   typingTest <|-- typingAccuracy
   typingTest <|-- users
-  users <|-- phrases
   history <|-- users
   class phrases{
         - id: int
@@ -39,5 +38,11 @@ classDiagram
         - tests: vector~typing Test~
         + addTest(pass: typingTest)
         + getTests: vector~typing Test~
+  }
+  class typingTest{
+    - testID: int
+    - attemptedAt: int
+    - phraselD: int
+    +  getTestID() : int + getAttemptedAt() : int
   }
 ```
