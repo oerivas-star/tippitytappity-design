@@ -10,6 +10,7 @@ classDiagram
   phrases <|-- typingSpeed
   phrases <|-- typingAccuracy
   users <|-- phrases
+  history <|-- users
   class phrases{
         - id: int
         - listOfWords: vector~string~
