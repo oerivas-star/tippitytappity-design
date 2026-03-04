@@ -11,19 +11,17 @@ classDiagram
   phrases <|-- typingAccuracy
   class phrases{
         - id: int
-        - email: string
-        - password: string
-        + login(user: string, pass: string) boolean
-        + get_email() string
+        - listOfWords: vector~string~
+        + get_Word() string
   }
   class typingSpeed{
-        - badges vector~string~
-        + add_badge(title: string)
-        + get_badges() vector~string~
+        - startTime: int
+        - endTime: int
+        + compare(pass: startTime, pass: endTime)
   }
   class typingAccuracy{
         - correct vector~string~
-        - numOfLines int
-        + accuracyCalc( correct )
+        - numOfLines: int
+        + accuracyCalc( pass: correct )
   }
 ```
