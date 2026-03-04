@@ -9,6 +9,7 @@ tippitytappity is a program to practice typing
 classDiagram
   phrases <|-- typingSpeed
   phrases <|-- typingAccuracy
+  users <|-- phrases
   class phrases{
         - id: int
         - listOfWords: vector~string~
@@ -23,5 +24,9 @@ classDiagram
         - correct vector~string~
         - numOfLines: int
         + accuracyCalc( pass: correct )
+  }
+  class users{
+        - userID: int
+        + getUserID()
   }
 ```
