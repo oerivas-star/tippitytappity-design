@@ -31,7 +31,7 @@ classDiagram
         - userName: string
         + getUserID()
   }
-  class histroy{
+  class history{
         - tests: vector~typing Test~
         + addTest(pass: typingTest)
         + getTests : vector~typing Test~
