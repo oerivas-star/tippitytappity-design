@@ -27,6 +27,7 @@ classDiagram
   }
   class users{
         - userID: int
+        - userName: string
         + getUserID()
   }
 ```
